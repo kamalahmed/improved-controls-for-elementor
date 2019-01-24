@@ -5,7 +5,8 @@ namespace Elementor;
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
+if ( class_exists( 'Elementor\Plugin') && !class_exists( 'Group_Control_TXC_Box_Shadow') )
+{
 /**
  * Elementor box shadow control.
  *
@@ -87,6 +88,8 @@ class Group_Control_TXC_Box_Shadow extends Group_Control_Base {
 
 		return $controls;
 	}
+	
+}
 
 	/**
 	 * Get default options.
