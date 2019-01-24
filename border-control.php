@@ -93,6 +93,18 @@ if ( class_exists( 'Elementor\Plugin') && !class_exists( 'Group_Control_TXC_Bord
 				],
 				'responsive' => true,
 			];
+			
+			$fields['radius'] = [
+				'label' => _x( 'Radius', 'Border Control', 'text-domain' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'selectors' => [
+					'{{SELECTOR}}' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+				'condition' => [
+					'border!' => '',
+				],
+				'responsive' => true,
+			];
 
 			return $fields;
 		}
