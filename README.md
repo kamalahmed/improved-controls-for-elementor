@@ -6,10 +6,11 @@ We need to include all the controls in our theme's functions.php or in our plugi
 
 ## Register the controls
 Use the follwoing hook to register your controls
-    // register custom elementor controls
-		add_action( 'elementor/controls/controls_registered',  'prefix_register_control' );
+
+         // register custom elementor controls
+ 	add_action( 'elementor/controls/controls_registered',  'prefix_register_control' );
     
-   /**
+         /**
 	 * @param \Elementor\Controls_Manager $controls_manager
 	 */
 	function prefix_register_control( $controls_manager ){
@@ -41,5 +42,5 @@ Use the follwoing hook to register your controls
 		);
     
     
-    You can use other controls like this. If you have any confusion, please feel free to ask me, I will be happy to help you in more details. You can use this freely with any of your fee or commerecial projects without any limitation. You are more than welcome to contribute if you like. Thanks.
+You can use other controls like this. If you have any confusion, please feel free to ask me, I will be happy to help you in more details. You can use this freely with any of your fee or commerecial projects without any limitation. You are more than welcome to contribute if you like. Thanks.
   
