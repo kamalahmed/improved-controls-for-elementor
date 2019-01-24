@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * ThemeXclub Custom Border Control control.
+ * Custom Border Control control.
  *
  *
  *
